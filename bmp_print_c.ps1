@@ -4,7 +4,6 @@ Param(
 	[parameter(mandatory)][string]$TESTSCRIPTPATH
 )
 
-Import-Module "C:\devel\UIAutomation\UIAutomation.dll"
 . ".\util\mspaint_print.ps1"
 . ".\util\util.ps1"
 
@@ -38,7 +37,7 @@ try{
 	$result = $False
 }
 if ($False -eq $result) {
-	Write-Host "[FAILED] start Application" -ForegroundColor Red
+	Write-Host "FAILED: start Application" -ForegroundColor Red
 	MSPAINT_Abort $process $window $app_dialog $dialog
 	exit 1
 }
@@ -52,7 +51,7 @@ try{
 	$result = $False
 }
 if ($False -eq $result){
-	Write-Host "[FAILED] call TEST_SCRIPT($TESTSCRIPTPATH)" -ForegroundColor Red
+	Write-Host "FAILED: call TEST_SCRIPT($TESTSCRIPTPATH)" -ForegroundColor Red
 	MSPAINT_Abort $process $window $app_dialog $dialog
 	exit 1
 }
@@ -65,7 +64,7 @@ try{
 	$result = $False
 }
 if ($False -eq $result){
-	Write-Host "[FAILED] click OK-BUTTON" -ForegroundColor Red
+	Write-Host "FAILED: click OK-BUTTON" -ForegroundColor Red
 	MSPAINT_Abort $process $window $app_dialog $dialog
 	exit 1
 }
@@ -79,7 +78,7 @@ try{
 	$result = $False
 }
 if ($False -eq $result){
-	Write-Host "[FAILED] click PRINT-BUTTON" -ForegroundColor Red
+	Write-Host "FAILED: click PRINT-BUTTON" -ForegroundColor Red
 	MSPAINT_Abort $process $window $app_dialog $dialog
 	exit 1
 }

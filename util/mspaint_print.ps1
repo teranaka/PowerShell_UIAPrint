@@ -91,8 +91,12 @@ function MSPAINT_Start($FILEPATH, $DRVNAME, [ref]$result_process, [ref]$result_w
 
 	# 印刷設定ダイアログの取得
 	try{
-		($driver_dialog = Get-UiaChildWindow -InputObject $dialog -Name '印刷設定' -ErrorAction Stop) >$null
+		($driver_dialog = (Get-UiaChildWindow -InputObject $dialog -Regex -Name '印刷設定' -ErrorAction Stop)) >$null
 	} catch {
+		Write-Warning -Message "印刷設定ダイアログが取得できません。処理を中断します"
+		return $False
+	}
+	if ($driver_dialog -eq $null){
 		Write-Warning -Message "印刷設定ダイアログが取得できません。処理を中断します"
 		return $False
 	}

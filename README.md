@@ -8,3 +8,15 @@ UI Automation PowerShell Extensionsを使って、各アプリケーションの
 * MSPaint (Windows 10)
 * Adobe Acrobat Reader IX
 
+環境
+* PowerShell 5.0 以上
+    バージョン確認方法 #58103#note-20 を参照
+
+* .NET Framework 4.0 以上
+    バージョン確認方法 #58103#note-26 を参照
+
+* UI Automation PowerShell Extensions
+    下記URLより取得（UIAutomation 0.8.7 Beta 3）
+    https://uiautomation.codeplex.com/
+
+

@@ -12,7 +12,10 @@ UI Automation PowerShell Extensionsを使って、各アプリケーションの
 * PowerShell 5.0 以上
 * .NET Framework 4.0 以上
 * UI Automation PowerShell Extensions
-    下記URLより取得（UIAutomation 0.8.7 Beta 3）
-    https://uiautomation.codeplex.com/
+    * 下記URLより取得（UIAutomation 0.8.7 Beta 3）
+        * 再配布
+        https://www.code-lab.net/?page_id=21648
+        * 本家
+        https://uiautomation.codeplex.com/
 
 

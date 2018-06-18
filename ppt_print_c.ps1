@@ -3,8 +3,6 @@ Param(
 	[parameter(mandatory)][string]$DATAPATH,
 	[parameter(mandatory)][string]$TESTSCRIPTPATH
 )
-
-Import-Module "C:\devel\UIAutomation\UIAutomation.dll"
 . ".\util\powerpoint_print.ps1"
 . ".\util\util.ps1"
 

@@ -1,5 +1,3 @@
-Import-Module "..\UIAutomation\UIAutomation.dll"
-
 # WINWORDを開始し、印刷設定ダイアログを立ち上げる
 # $FILEPATH			[in]	DOCXファイルへのパス
 # $DRVNAME			[in]	ドライバ名（プリンタアイコン名）

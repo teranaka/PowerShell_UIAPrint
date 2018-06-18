@@ -1,4 +1,3 @@
-Import-Module "..\UIAutomation\UIAutomation.dll"
 add-type -AssemblyName microsoft.VisualBasic
 
 # MSPAINTを開始し、印刷設定ダイアログを立ち上げる

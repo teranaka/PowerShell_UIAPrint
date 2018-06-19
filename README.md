@@ -1,5 +1,6 @@
 # PowerShell_UIAPrint
 UI Automation PowerShell Extensionsを使って、各アプリケーションの印刷ダイアログを起動し、印刷するまでのスクリプトです。
+日本語環境にのみ対応しています。
 
 対応アプリケーションは以下の通り
 * Word2016
